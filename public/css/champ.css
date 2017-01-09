@@ -1,0 +1,311 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#bg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#main{
+  width: 80%;
+  top: 10%;
+  height: 80%;
+  position: absolute;
+  left: 10%;
+  background: white;
+  border-radius: 10px;
+}
+
+#banner{
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 40%;
+}
+#nofoundNotice{
+  margin-top: 30px;
+}
+#nofoundNotice p{
+  font-family: fantasy !important;
+  font-size: 18px;
+}
+#enemytip{
+  padding-left: 20px;
+  width: 52%;
+  position: absolute;
+  top: 45%;
+  left: 42%;
+}
+
+#enemytip{
+  position: absolute;
+  right: 15%;
+}
+#enemytip ul{
+  margin-top: 5%;
+}
+#enemytip ul li{
+  margin-top: 1%;
+}
+
+#avatar{
+  position: absolute;
+  width: 12%;
+  left:5%;
+  top:53%;
+  border-radius: 10px;
+}
+#note1{
+  font-size: 10px;
+  position: absolute;
+  width: 30%;
+  left:5%;
+  top:78%;
+}
+
+#name{
+  position: absolute;
+  left: 18%;
+  top: 55%;
+  width: 20%;
+}
+#name>h1{
+  font-size: 30px;
+}
+#name>h1, #name>h3{
+  font-family: fantasy;
+}
+#enemytip{
+  font-family: sans-serif;
+}
+
+#hr1{
+  position: absolute;
+  width: 2px;
+  top: 50%;
+  height: 35%;
+  border-color: rgb(28,91,128);
+  background-color: rgb(28,91,128);
+  position: absolute;
+  left:40%;
+}
+
+#champsZone{
+  width: 52%;
+  position: absolute;
+  right:5%;
+  top:45%;
+  height:40%;
+}
+#champsZone img{
+  border-radius: 10px;
+}
+.champ{
+  width: 42%;
+  margin: 0;
+}
+#champsZone p{
+  font-family: sans-serif;
+}
+.cas{
+  float: left;
+  display: inline-block;
+  width: 27%;
+  height: 100px;
+  margin-right: 5%;
+  margin-top: 2%;
+}
+.cas img{
+  display: inline-block;
+}
+.cas .aa{
+  display: inline;
+}
+.infos{
+  padding-top: 5px;
+  float: right;
+  margin-left: 10px;
+}
+.thename{
+  display: block;
+  text-decoration: none;
+  color:black;
+  font-family: fantasy;
+  clear:left;
+  width:35%;
+  text-align: center;
+  padding-top: 2px;
+  font-size: 12px;
+  margin-left: 3px;
+}
+.thename:hover{
+  text-decoration: underline;
+  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+}
+.smallFont{
+  font-size: 13px;
+}
+.smallMarginTop{
+  margin-top: 7px;
+}
+
+#pageNumber{
+  position: absolute;
+  top:90%;
+  left:43%;
+}
+#pageNumber p{
+  text-decoration: none;
+  color: black;
+  font-family: fantasy;
+  font-size: 20px;
+  margin-left: 10px;
+  display: inline;
+}
+#p1:hover,#p2:hover,#p3:hover{
+  -webkit-transition-duration: 0.2s; /* Safari */
+  transition-duration: 0.2s;
+  text-decoration: underline;
+  cursor: pointer;
+  text-shadow: 1px 1px #888888;
+}
+#rightArrow{
+  margin-left: 10px;
+}
+#leftArrow{
+  display: none;
+}
+#rightArrow:hover, #leftArrow:hover{
+  font-size: 150%;
+  margin-right: -3px;
+  -webkit-transition-duration: 0.2s; /* Safari */
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+#content2, #content3{
+  display: none;
+}
+
+#back{
+  font-family: fantasy;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  padding-left: 10px;
+}
+#back:hover, #back:hover #back i{
+  text-decoration: underline;
+}
+
+
+.bot{
+  display: inline;
+  color: white;
+  opacity: 0.5;
+  font-family: sans-serif;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+}
+#f2{
+  position: absolute;
+  bottom: 0;
+  width: 30%;
+  left:34%;
+}
+#f3{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-height: 637px){
+  #note1{
+    display: none;
+  }
+  #enemytip{
+    font-size: 14px;
+  }
+  #enemytip ul{
+    margin-top: 2%;
+  }
+}
+@media screen and (max-height: 475px){
+  #banner{
+    display: none;
+  }
+  #enemytip{
+    top:17%;
+  }
+  #hr1{
+    top: 20%;
+    height: 50%;
+  }
+  #avatar{
+    top: 20%;
+  }
+  #name{
+    top: 20%;
+  }
+  #pageNumber{
+    top: 80%;
+  }
+  #champsZone{
+    top: 10%;
+  }
+}
+
+@media screen and (max-height: 533px){
+  #pageNumber{
+    left: 30%;
+  }
+}
+@media screen and (max-height: 282px){
+  .cas{
+    margin-top: 0;
+    font-size: 50%;
+    height: 95%;
+  }
+  .champ{
+    width: 30%;
+  }
+}
+@media screen and (max-height: 272px){
+  #enemytip{
+    top: 10%;
+    font-size: 10px;
+  }
+  #avatar{
+    width: 10%;
+  }
+}
+@media screen and (max-width: 1165px){
+  .infos, .smallFont{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 853px){
+  .infos, .smallFont{
+    font-size: 8px;
+  }
+  #name h1, #name h3{
+    font-size: 80%;
+  }
+}
+@media screen and (max-width:627px){
+  #note1{
+    display: none;
+  }
+  #enemytip{
+    font-size: 10px;
+  }
+}

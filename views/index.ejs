@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Counter Buddy</title>
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+  </head>
+  <body>
+    <img id="bg" src="../image/bg.jpg" alt="background">
+    <section id="center">
+      <h1 id="title" >Counter Buddy</h1>
+      <form class="" action="/search" method="POST">
+        <input id="inputBar" type="text" name="inputBar" placeholder="Search Champion's name..." required>
+        <br>
+        <section id="btngroup">
+          <button id="searchBtn1" type="submit" class="btn">Counter Search</button>
+          <a href="/search" id="searchBtn2" class="btn">Champion List&nbsp;</a>
+        </section>
+      </form>
+
+      <p id="hey">
+        --The best counter picks database that bases on data analysis
+      </p>
+
+
+    </section>
+    <footer>
+      <a href="#" onclick="termofuse()" class="bot">Term of Use</a>
+      <p class="bot" id="f2" >2017 COUNTER BUDDY All Rights Reserved&nbsp;&reg; </p>
+      <p class="bot" id="f4">This website has served <b id="specialf"><%= num %></b> times for counter pick advice!</p></p>
+      <a href="#" onclick="contactMe()" class="bot" id="f3">Contact Us</a>
+    </footer>
+    <script src = "../javascript/index.js"></script>
+  </body>
+</html>

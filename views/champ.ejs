@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= webTitle %></title>
+    <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/champ.css">
+    <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css">
+  </head>
+  <body>
+    <img id="bg" src="../image/champbg.jpg" alt="background">
+    <section id="main">
+      <img id="banner" src="<%= cpBanner %>" alt="champBanner">
+      <img id="avatar" src="<%= cpImage %>" alt="champAvatar">
+      <p id="note1">
+        *Note: The stats are based on 60000 games played by Master and Challenger tier players in Season 2017.
+        There may be not enough data for some champs. We are collecting game data every 3 days.
+      </p>
+      <section id="content1">
+        <section id="name">
+          <h1><%= cpName %></h1>
+          <h3><%= cpTitle %></h3>
+        </section>
+        <section id="enemytip">
+          <h2>Enemy Tips</h2>
+          <ul>
+            <% for(var i=0; i<cpTip.length; i++) {%>
+              <%if (i < 3) { %>
+                <li><%= cpTip[i] %></li>
+              <% } %>
+            <% } %>
+          </ul>
+        </section>
+        <hr id="hr1">
+      </section>
+      <section id = "content2">
+        <section id="name">
+          <h1><%= cpName %></h1>
+          <h3>is weak against</h3>
+        </section>
+        <section id="champsZone">
+          <% if(arrLarge.length == 0){ %>
+            <section id="nofoundNotice">
+              <p>Sorry, no match data for <%= cpName %> found, probably it is because that
+              players in master tier and challenger tier usually don't like it... We are updating
+               match data daily.
+              </p>
+            </section>
+          <% } %>
+
+          <% for(var i=0; i<arrLarge.length; i++) {%>
+            <% var nid = "ca" + (i+1).toString(); %>
+            <% var imgsrc = "../image/champsAvatar/" + arrLarge[i]["short"] + ".png"; %>
+            <% var win = arrLarge[i]["win"].toString(); %>
+            <% var lose = arrLarge[i]["lose"].toString(); %>
+            <% var oname = arrLarge[i]["name"]; %>
+            <% var href1 = "/champ/" + arrLarge[i]["short"]; %>
+            <% var wr = Math.round((arrLarge[i]["winRate"]*100)).toString() + "%"; %>
+            <% var stats1 = win + "W - " + lose + "L"; %>
+            <section id="<%= nid %>" class ="cas">
+              <a href="<%= href1 %>" class="aa"> <img class="champ" src="<%= imgsrc %>" alt="champAvatar"></a>
+              <section class="infos">
+                <p>Stats</p>
+                <p class="smallFont"><%= stats1 %></p>
+                <p class="smallMarginTop">Win Rate</p>
+                <p class="smallFont"><%= wr %></p>
+              </section>
+              <a href="<%= href1 %>" class="thename"><%= oname %></a>
+            </section>
+          <% } %>
+
+        </section>
+        <hr id="hr1">
+      </section>
+      <section id = "content3">
+        <section id="name">
+          <h1><%= cpName %></h1>
+          <h3>is strong against</h3>
+        </section>
+        <section id="champsZone">
+          <% if(arrSmall.length == 0){ %>
+            <section id="nofoundNotice">
+              <p>Sorry, no match data for <%= cpName %> found, probably it is because that
+              players in master tier and challenger tier usually don't like it... We are updating
+               match data daily.
+              </p>
+            </section>
+          <% } %>
+          <% for(var i=0; i<arrSmall.length; i++) {%>
+            <% var nid = "ca" + (i+1).toString(); %>
+            <% var imgsrc = "../image/champsAvatar/" + arrSmall[i]["short"] + ".png"; %>
+            <% var win = arrSmall[i]["win"].toString(); %>
+            <% var lose = arrSmall[i]["lose"].toString(); %>
+            <% var oname = arrSmall[i]["name"]; %>
+            <% var href1 = "/champ/" + arrSmall[i]["short"]; %>
+            <% var wr = Math.round((arrSmall[i]["winRate"]*100)).toString() + "%"; %>
+            <% var stats1 = win + "W - " + lose + "L"; %>
+            <section id="<%= nid %>" class ="cas">
+              <a href="<%= href1 %>" class="aa"> <img class="champ" src="<%= imgsrc %>" alt="champAvatar"></a>
+              <section class="infos">
+                <p>Stats</p>
+                <p class="smallFont"><%= stats1 %></p>
+                <p class="smallMarginTop">Win Rate</p>
+                <p class="smallFont"><%= wr %></p>
+              </section>
+              <a href="<%= href1 %>" class="thename"><%= oname %></a>
+            </section>
+          <% } %>
+
+        </section>
+        <hr id="hr1">
+      </section>
+      <section id="pageNumber">
+        <i class="fa fa-caret-left" id="leftArrow" onclick="clickLeft()" aria-hidden="true"></i>
+        <p id="p1" onclick="myClick(this)">1</p>
+        <p id="p2" onclick="myClick(this)">2</p>
+        <p id="p3" onclick="myClick(this)">3</p>
+        <i class="fa fa-caret-right" id="rightArrow" onclick="clickRight()" aria-hidden="true"></i>
+      </section>
+      <a href="/search" id="back"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+        Back to List
+      </a>
+    </section>
+    <footer>
+      <a href="#" class="bot">Term of Use</a>
+      <p class="bot" id="f2">2017 COUNTER BUDDY All Rights Reserved&nbsp;&reg;</p>
+      <a href="#" class="bot" id="f3">Contact Us</a>
+    </footer>
+    <script src = "../javascript/champ.js"></script>
+    <script src="../javascript/jquery-3.1.1.min.js"></script>
+  </body>
+</html>

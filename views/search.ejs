@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Search</title>
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/search.css">
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">Counter Buddy</a></h1>
+      <form action="/search" method="post">
+        <input id="inputBar" type="text" name = "inputBar" value = "<%= srched %>" placeholder="Search Champion's name...">
+        <button href="#" id="searchBtn1" type="submit" class="btn">Counter Search</button>
+      </form>
+      <hr id="frontline">
+    </header>
+
+    <section id="main">
+      <% resultArr.sort(function(a,b){ %>
+        <% return a["name"].localeCompare(b["name"]); %>
+      <% }); %>
+      <% if(resultArr.length == 0){ %>
+        <p id="nofound">No Results Found, Try Another Keyword.
+          <br><a href="/search" class="btn">Try Look Up the Champ List..</a>
+        </p>
+      <% } %>
+      <% for(var i=0; i<resultArr.length; i++) {%>
+        <% var imgSrc = resultArr[i]["image"]; %>
+        <% var chpName = resultArr[i]["name"]; %>
+        <% var href1 = "/champ/" + resultArr[i]["short"]; %>
+        <section class="champ">
+          <a href="<%= href1%>"><img src="<%= imgSrc %>" alt="champAvatar"></a>
+          <a id="clickA" href="<%= href1 %>"><%= chpName %></a>
+        </section>
+      <% } %>
+    </section>
+    <section id="box"></section>
+    <p id="botwords">2017 COUNTER BUDDY All Rights Reserved&nbsp;&reg;</p>
+    <script src = "../javascript/search.js"></script>
+  </body>
+</html>
