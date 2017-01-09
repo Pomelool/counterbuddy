@@ -90,11 +90,11 @@
           <% for(var i=0; i<arrSmall.length; i++) {%>
             <% var nid = "ca" + (i+1).toString(); %>
             <% var imgsrc = "../image/champsAvatar/" + arrSmall[i]["short"] + ".png"; %>
-            <% var win = arrSmall[i]["win"].toString(); %>
-            <% var lose = arrSmall[i]["lose"].toString(); %>
+            <% var lose = arrSmall[i]["win"].toString(); %>
+            <% var win = arrSmall[i]["lose"].toString(); %>
             <% var oname = arrSmall[i]["name"]; %>
             <% var href1 = "/champ/" + arrSmall[i]["short"]; %>
-            <% var wr = Math.round((arrSmall[i]["winRate"]*100)).toString() + "%"; %>
+            <% var wr = Math.round(100-(arrSmall[i]["winRate"]*100)).toString() + "%"; %>
             <% var stats1 = win + "W - " + lose + "L"; %>
             <section id="<%= nid %>" class ="cas">
               <a href="<%= href1 %>" class="aa"> <img class="champ" src="<%= imgsrc %>" alt="champAvatar"></a>
