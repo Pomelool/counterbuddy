@@ -1,3 +1,7 @@
+window.onload = function()
+ { document.getElementById("loadingSection").style.display = "none"; }
+
+
 var page1 = document.getElementById('p1');
 var page2 = document.getElementById('p2');
 var page3 = document.getElementById('p3');
