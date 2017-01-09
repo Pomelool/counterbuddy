@@ -62,10 +62,9 @@ router.post('/', function(req, res, next) {
           resultArr: doc,
           srched:srched
         });
+        mongoose.connection.close();
       }
-      mongoose.connection.close();
     });
-
   });
 
 });
