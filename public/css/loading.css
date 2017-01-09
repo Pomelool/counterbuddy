@@ -1,5 +1,5 @@
 #loadingSection{
-  background-color: #404456;
+  background-color: white;
   position: fixed;
   left: 0px;
   right: 0px;
@@ -9,7 +9,13 @@
   z-index: 99; /* Higher than anything else in the document */
   display: block;
 }
-
+#loadword{
+  font-family: sans-serif;
+  position: absolute;
+  font-size: 150%;
+  top: 70%;
+  left: 55%;
+}
 #loader {
   position: absolute;
   top: 50%;
@@ -18,7 +24,7 @@
   margin-left: -2.7em;
   width: 5.4em;
   height: 5.4em;
-  background-color: #404456;
+  background-color: white;
 }
 
 #hill {
@@ -28,7 +34,7 @@
   top: 1.7em;
   left: 1.7em;
   background-color: transparent;
-  border-left: .25em solid whitesmoke;
+  border-left: .25em solid #404456;
   transform: rotate(45deg);
 }
 
@@ -38,7 +44,7 @@
   width: 7.1em;
   height: 7.1em;
   left: 0;
-  background-color: #404456;
+  background-color: white;
 }
 
 #box {
@@ -48,7 +54,7 @@
   width: 1em;
   height: 1em;
   background-color: transparent;
-  border: .25em solid whitesmoke;
+  border: .25em solid #404456;
   border-radius: 15%;
   transform: translate(0, -1em) rotate(-45deg);
   animation: push 2.5s cubic-bezier(.79, 0, .47, .97) infinite;

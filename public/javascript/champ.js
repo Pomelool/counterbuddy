@@ -1,5 +1,7 @@
-window.onload = function()
- { document.getElementById("loadingSection").style.display = "none"; }
+document.getElementById("loadingSection").style.display = "block";
+window.onload = setTimeout(function(){
+   document.getElementById("loadingSection").style.display = "none";
+ },1000);
 
 
 var page1 = document.getElementById('p1');
