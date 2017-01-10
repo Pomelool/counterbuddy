@@ -165,7 +165,7 @@ footer{
   padding-right: 5px;
 }
 
-@media screen and (max-width: 1167px){
+@media screen and (max-width: 1230px){
   #title{
     font-size: 70px;
   }
