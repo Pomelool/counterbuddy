@@ -18,7 +18,7 @@
       <hr id="frontline">
     </header>
 
-    <section id="main">
+    <section id="main" onload="fadeIn(this)" style="display:none;">
       <% resultArr.sort(function(a,b){ %>
         <% return a["name"].localeCompare(b["name"]); %>
       <% }); %>
@@ -40,5 +40,6 @@
     <section id="box"></section>
     <p id="botwords">2017 COUNTER BUDDY All Rights Reserved&nbsp;&reg;</p>
     <script src = "../javascript/search.js"></script>
+    <script src="../javascript/jquery-3.1.1.min.js"></script>
   </body>
 </html>

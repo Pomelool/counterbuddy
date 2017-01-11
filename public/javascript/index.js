@@ -10,3 +10,7 @@ function contactMe(){
   var msg = "Email: lhq@bu.edu";
   alert(msg);
 }
+
+window.fadeIn = function(obj) {
+    $(obj).fadeIn(500);
+}

@@ -11,7 +11,7 @@
     <link rel="prefetch" href="./image/bg_search.jpg">
   </head>
   <body>
-    <img id="bg" src="../image/bg.jpg" alt="background">
+    <img id="bg" onload="fadeIn(this)" style="display:none;" src="../image/bg.jpg" alt="background">
     <section id="center">
       <p id="title">Counter Buddy</p>
       <form class="" action="/search" method="POST">
@@ -36,5 +36,6 @@
       <a href="#" onclick="contactMe()" class="bot" id="f3">Contact Us</a>
     </footer>
     <script src = "../javascript/index.js"></script>
+    <script src="../javascript/jquery-3.1.1.min.js"></script>
   </body>
 </html>

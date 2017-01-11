@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css">
   </head>
   <body>
-    <img id="bg" src="../image/champbg.jpg" alt="background">
+    <img id="bg" onload="fadeIn(this)" style="display:none;" src="../image/champbg.jpg" alt="background">
     <section id="main">
       <img id="banner" onload="fadeIn(this)" style="display:none;" src="<%= cpBanner %>" alt="champBanner">
       <img id="avatar" src="<%= cpImage %>" alt="champAvatar">
