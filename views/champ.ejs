@@ -7,17 +7,10 @@
     <link rel="icon" href="../image/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/champ.css">
     <link rel="stylesheet" href="../css/loading.css">
-    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="../css/font.css">
     <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css">
   </head>
   <body>
-    <section id="loadingSection" style="display:none;">
-      <section id="loader">
-        <section id="box"></section>
-        <section id="hill"></section>
-        <section id="loadword">Loading...</section>
-      </section>
-    </section>
     <img id="bg" src="../image/champbg.jpg" alt="background">
     <section id="main">
       <img id="banner" src="<%= cpBanner %>" alt="champBanner">
@@ -28,7 +21,7 @@
       </p>
       <section id="content3">
         <section id="name">
-          <h1><%= cpName %></h1>
+          <h1><%= cpName %></h1><br>
           <h3><%= cpTitle %></h3>
         </section>
         <section id="enemytip">
@@ -45,7 +38,7 @@
       </section>
       <section id = "content1">
         <section id="name">
-          <h1><%= cpName %></h1>
+          <h1><%= cpName %></h1><br>
           <h3>is weak against</h3>
         </section>
         <section id="champsZone">
@@ -69,7 +62,7 @@
             <% var stats1 = win + "W - " + lose + "L"; %>
             <section id="<%= nid %>" class ="cas">
               <a href="<%= href1 %>" class="aa"> <img class="champ" src="<%= imgsrc %>" alt="champAvatar"></a>
-              <section class="infos">
+              <section id="infos">
                 <p>Stats</p>
                 <p class="smallFont"><%= stats1 %></p>
                 <p class="smallMarginTop">Win Rate</p>
@@ -84,7 +77,7 @@
       </section>
       <section id = "content2">
         <section id="name">
-          <h1><%= cpName %></h1>
+          <h1><%= cpName %></h1><br>
           <h3>is strong against</h3>
         </section>
         <section id="champsZone">
@@ -107,7 +100,7 @@
             <% var stats1 = win + "W - " + lose + "L"; %>
             <section id="<%= nid %>" class ="cas">
               <a href="<%= href1 %>" class="aa"> <img class="champ" src="<%= imgsrc %>" alt="champAvatar"></a>
-              <section class="infos">
+              <section id="infos">
                 <p>Stats</p>
                 <p class="smallFont"><%= stats1 %></p>
                 <p class="smallMarginTop">Win Rate</p>

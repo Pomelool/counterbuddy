@@ -15,7 +15,7 @@ header{
 }
 header h1 a{
   color:rgba(211,175,55,1);
-  font-family: fantasy;
+  font-family: Aldrich, fantasy;
   text-decoration: none;
   margin-left: 3%;
 }
@@ -55,7 +55,7 @@ header h1 a{
   display: block;
   text-decoration: none;
   text-align: center;
-  font-family: fantasy;
+  font-family: Montserrat Alternates, sans-serif;
   cursor: pointer;
   color: black;
 }
@@ -95,7 +95,7 @@ header h1 a{
 .btn{
   text-decoration: none;
   color:black;
-  font-family: fantasy;
+  font-family: Montserrat Alternates, sans-serif;
   font-weight: bolder;
   border: 2px solid rgba(211,175,55,1);
   border-radius: 3px;
@@ -131,6 +131,7 @@ header h1 a{
   text-align: center;
   color: rgba(211,175,55,1);
   margin-bottom: 30px;
+  font-family: Montserrat Alternates, sans-serif;
 }
 
 @media screen and (max-width: 852px){

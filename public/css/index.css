@@ -30,7 +30,7 @@ body{
   text-align: center;
   width: 100%;
   margin-top: 10%;
-  font-family: Aldrich;
+  font-family: Aldrich, fantasy;
   font-style: normal;
   font-size: 70px;
   color: rgb(211,175,55);
@@ -74,7 +74,7 @@ body{
 .btn{
   text-decoration: none;
   color:black;
-  font-family: Aldrich;
+  font-family: Aldrich, fantasy;
   font-weight: 400;
   border: 2px solid rgba(211,175,55,1);
   border-radius: 3px;
@@ -121,7 +121,7 @@ body{
 
 #hey{
   color: rgba(211,175,55,1);
-  font-family: Aldrich;
+  font-family: Aldrich, fantasy;
   font-weight: 400;
   margin-top: 60px;
   text-align: center;
@@ -132,7 +132,7 @@ body{
   display: inline;
   color: white;
   opacity: 0.5;
-  font-family: Aldrich;
+  font-family: Aldrich, fantasy;
   font-weight: 400;
 }
 
@@ -214,6 +214,9 @@ footer{
   }
 }
 @media screen and (max-width: 777px){
+  #bg{
+    display: none;
+  }
   #title{
     font-size: 40px;
     margin-top: 20%;
@@ -257,9 +260,6 @@ footer{
   }
   #btngroup{
     margin-left: 30%;
-  }
-  #bg{
-    display: none;
   }
 }
 

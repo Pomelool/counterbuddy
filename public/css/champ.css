@@ -29,7 +29,7 @@
   margin-top: 30px;
 }
 #nofoundNotice p{
-  font-family: fantasy !important;
+  font-family: Aldrich, fantasy !important;
   font-size: 18px;
 }
 #enemytip{
@@ -76,10 +76,10 @@
   font-size: 30px;
 }
 #name>h1, #name>h3{
-  font-family: fantasy;
+  font-family: Aldrich, fantasy;
 }
 #enemytip{
-  font-family: sans-serif;
+  font-family: Montserrat Alternates, sans-serif;
 }
 
 #hr1{
@@ -108,7 +108,7 @@
   margin: 0;
 }
 #champsZone p{
-  font-family: sans-serif;
+  font-family: Montserrat Alternates, sans-serif;
 }
 .cas{
   float: left;
@@ -124,16 +124,19 @@
 .cas .aa{
   display: inline;
 }
-.infos{
+#infos{
   padding-top: 5px;
   float: right;
   margin-left: 10px;
+  font-family: Aldrich, sans-serif !important;
+  font-size: 12px;
 }
+
 .thename{
   display: block;
   text-decoration: none;
   color:black;
-  font-family: fantasy;
+  font-family: Aldrich, fantasy;
   clear:left;
   width:35%;
   text-align: center;
@@ -161,7 +164,7 @@
 #pageNumber p{
   text-decoration: none;
   color: black;
-  font-family: fantasy;
+  font-family: Aldrich, fantasy;
   font-size: 20px;
   margin-left: 10px;
   display: inline;
@@ -192,7 +195,7 @@
 }
 
 #back{
-  font-family: fantasy;
+  font-family: Aldrich, fantasy;
   text-decoration: none;
   color: black;
   cursor: pointer;
@@ -207,7 +210,7 @@
   display: inline;
   color: white;
   opacity: 0.5;
-  font-family: sans-serif;
+  font-family: Montserrat Alternates, sans-serif;
 }
 
 footer{
@@ -289,12 +292,12 @@ footer{
   }
 }
 @media screen and (max-width: 1165px){
-  .infos, .smallFont{
+  #infos, .smallFont{
     font-size: 10px;
   }
 }
 @media screen and (max-width: 853px){
-  .infos, .smallFont{
+  #infos, .smallFont{
     font-size: 8px;
   }
   #name h1, #name h3{
