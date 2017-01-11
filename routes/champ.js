@@ -26,8 +26,7 @@ router.get('/:key', function (req, res, next) {
         var cpTitle = doc[0]["title"];
         var cpName = doc[0]["name"];
         var cpTip = doc[0]["enemytips"];
-        var cpBanner = doc[0]["banner"]
-        cpBanner = cpBanner.substring(0,cpBanner.length-3) + "png";
+        var cpBanner = doc[0]["banner"];
         var arrLarge = doc[0]["strongAgainst"];
         var arrSmall = doc[0]["weakAgainst"];
 

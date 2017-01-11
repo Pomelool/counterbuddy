@@ -4,6 +4,12 @@
 //  },1000);
 
 
+// this function must be defined in the global scope
+window.fadeIn = function(obj) {
+    $(obj).fadeIn(1000);
+}
+
+
 var page1 = document.getElementById('p1');
 var page2 = document.getElementById('p2');
 var page3 = document.getElementById('p3');
