@@ -31,10 +31,27 @@
         <% var imgSrc = resultArr[i]["image"]; %>
         <% var chpName = resultArr[i]["name"]; %>
         <% var href1 = "/champ/" + resultArr[i]["short"]; %>
+        <% if(i == 0 || i == 36 || i == 72 || i == 108) { %>
+          <% var searchPart = "srchPart" + Math.round(i / 35).toString(); %>
+          <section id="<%= searchPart %>" onload="fadeIn(this)">
+        <% } %>
         <section class="champ">
           <a href="<%= href1%>"><img src="<%= imgSrc %>" alt="champAvatar"></a>
           <a id="clickA" href="<%= href1 %>"><%= chpName %></a>
         </section>
+        <% var leng = resultArr.length; %>
+        <% if(leng <= 36 && i == leng-1) { %>
+          </section>
+        <% } %>
+        <% if(leng > 36 && leng <= 72 && i == leng-1) { %>
+          </section>
+        <% } %>
+        <% if(leng > 72 && leng <= 108 && i == leng-1) { %>
+          </section>
+        <% } %>
+        <% if(leng > 108 && i == leng-1) { %>
+          </section>
+        <% } %>
       <% } %>
     </section>
     <section id="box"></section>
