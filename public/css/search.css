@@ -25,10 +25,6 @@ header h1 a{
   margin-left:3%;
 }
 
-#sp2, #sp3, #sp4{
-  display: none;
-}
-
 #nofound{
   color:rgba(211,175,55,1);
   font-family:
@@ -55,6 +51,7 @@ header h1 a{
   margin-left: 20%;
   cursor: pointer;
   border-radius: 10px;
+  background: rgba(255,255,255,0);
 }
 .champ #clickA{
   display: block;
