@@ -6,6 +6,7 @@ var mongodbUri = 'mongodb://reader:reader@ds157258.mlab.com:57258/counterbuddy';
 
 /* GET home page. */
 router.get('/:key', function (req, res, next) {
+  mongoose.Promise = global.Promise;
   mongoose.connect(mongodbUri);
   db = mongoose.connection;
 

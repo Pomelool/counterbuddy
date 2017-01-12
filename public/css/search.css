@@ -51,7 +51,6 @@ header h1 a{
   margin-left: 20%;
   cursor: pointer;
   border-radius: 10px;
-  background: rgba(255,255,255,0);
 }
 .champ #clickA{
   display: block;
