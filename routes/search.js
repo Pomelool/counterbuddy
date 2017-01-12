@@ -1,3 +1,4 @@
+require('events').EventEmitter.prototype._maxListeners = 0;
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');

@@ -7,8 +7,8 @@
     <link rel="icon" href="./image/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/font.css">
-    <link rel="prefetch" href="./image/champbg.jpg">
-    <link rel="prefetch" href="./image/bg_search.jpg">
+    <link rel="prefetch prerender" href="./search">
+    <link rel="prefetch prerender" href="./image/champbg.jpg">
   </head>
   <body>
     <img id="bg" onload="fadeIn(this)" style="display:none;" src="../image/bg.jpg" alt="background">
@@ -35,7 +35,7 @@
       <p class="bot" id="f4">This website has served <b id="specialf"><%= num %></b> times for counter pick advice!</p></p>
       <a href="#" onclick="contactMe()" class="bot" id="f3">Contact Us</a>
     </footer>
-    <script src = "../javascript/index.js"></script>
     <script src="../javascript/jquery-3.1.1.min.js"></script>
+    <script src = "../javascript/index.js"></script>
   </body>
 </html>

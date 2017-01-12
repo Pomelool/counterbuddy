@@ -4,10 +4,12 @@
 //  },1000);
 
 
-$("#sp1").bind("load", function () { $(this).fadeIn(3000); });
-$("#sp2").bind("load", function () { $(this).fadeIn(3000); });
-$("#sp3").bind("load", function () { $(this).fadeIn(3000); });
-$("#sp4").bind("load", function () { $(this).fadeIn(3000); });
+// this function must be defined in the global scope
+window.fadeIn = function(obj) {
+    $(obj).fadeIn(500);
+}
+
+
 var page1 = document.getElementById('p1');
 var page2 = document.getElementById('p2');
 var page3 = document.getElementById('p3');
