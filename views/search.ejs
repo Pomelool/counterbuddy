@@ -27,7 +27,7 @@
           <br><a href="/search" class="btn">Try Look Up the Champ List..</a>
         </p>
       <% } %>
-      <section id="sp1" onload="fadeIn(this)">
+      <section id="sp1">
         <% for(var i=0; i<resultArr.length && i<36; i++) {%>
           <% var imgSrc = resultArr[i]["image"]; %>
           <% var chpName = resultArr[i]["name"]; %>
@@ -36,9 +36,9 @@
             <a href="<%= href1%>"><img src="<%= imgSrc %>" alt="champAvatar"></a>
             <a id="clickA" href="<%= href1 %>"><%= chpName %></a>
           </section>
-          <% } %>
+        <% } %>
       </section>
-      <section id="sp2" onload="fadeIn(this)">
+      <section id="sp2">
         <% for(var i=36; i<resultArr.length && i<72; i++) {%>
           <% var imgSrc = resultArr[i]["image"]; %>
           <% var chpName = resultArr[i]["name"]; %>
@@ -49,7 +49,7 @@
           </section>
           <% } %>
       </section>
-      <section id="sp3" onload="fadeIn(this)">
+      <section id="sp3">
         <% for(var i=72; i<resultArr.length && i<108; i++) {%>
           <% var imgSrc = resultArr[i]["image"]; %>
           <% var chpName = resultArr[i]["name"]; %>
@@ -60,7 +60,7 @@
           </section>
           <% } %>
       </section>
-      <section id="sp4" onload="fadeIn(this)">
+      <section id="sp4">
         <% for(var i=108; i<resultArr.length; i++) {%>
           <% var imgSrc = resultArr[i]["image"]; %>
           <% var chpName = resultArr[i]["name"]; %>
