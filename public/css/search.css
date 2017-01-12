@@ -134,17 +134,17 @@ header h1 a{
   font-family: Montserrat Alternates, sans-serif;
 }
 
-@media screen and (max-width: 852px){
+@media screen and (max-width: 925px){
   #clickA{
     font-size: 12px;
   }
 }
-@media screen and (max-width: 639px){
+@media screen and (max-width: 695px){
   #clickA{
     font-size: 10px;
   }
 }
-@media screen and (max-width: 532px){
+@media screen and (max-width: 580px){
   #clickA{
     font-size: 8px;
   }

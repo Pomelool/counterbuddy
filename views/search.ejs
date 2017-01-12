@@ -27,32 +27,50 @@
           <br><a href="/search" class="btn">Try Look Up the Champ List..</a>
         </p>
       <% } %>
-      <% for(var i=0; i<resultArr.length; i++) {%>
-        <% var imgSrc = resultArr[i]["image"]; %>
-        <% var chpName = resultArr[i]["name"]; %>
-        <% var href1 = "/champ/" + resultArr[i]["short"]; %>
-        <% if(i == 0 || i == 36 || i == 72 || i == 108) { %>
-          <% var searchPart = "srchPart" + Math.round(i / 35).toString(); %>
-          <section id="<%= searchPart %>" onload="fadeIn(this)">
-        <% } %>
-        <section class="champ">
-          <a href="<%= href1%>"><img src="<%= imgSrc %>" alt="champAvatar"></a>
-          <a id="clickA" href="<%= href1 %>"><%= chpName %></a>
-        </section>
-        <% var leng = resultArr.length; %>
-        <% if(leng <= 36 && i == leng-1) { %>
+      <section id="sp1" onload="fadeIn(this)">
+        <% for(var i=0; i<resultArr.length && i<36; i++) {%>
+          <% var imgSrc = resultArr[i]["image"]; %>
+          <% var chpName = resultArr[i]["name"]; %>
+          <% var href1 = "/champ/" + resultArr[i]["short"]; %>
+          <section class="champ">
+            <a href="<%= href1%>"><img src="<%= imgSrc %>" alt="champAvatar"></a>
+            <a id="clickA" href="<%= href1 %>"><%= chpName %></a>
           </section>
-        <% } %>
-        <% if(leng > 36 && leng <= 72 && i == leng-1) { %>
+          <% } %>
+      </section>
+      <section id="sp2" onload="fadeIn(this)">
+        <% for(var i=36; i<resultArr.length && i<72; i++) {%>
+          <% var imgSrc = resultArr[i]["image"]; %>
+          <% var chpName = resultArr[i]["name"]; %>
+          <% var href1 = "/champ/" + resultArr[i]["short"]; %>
+          <section class="champ">
+            <a href="<%= href1%>"><img src="<%= imgSrc %>" alt="champAvatar"></a>
+            <a id="clickA" href="<%= href1 %>"><%= chpName %></a>
           </section>
-        <% } %>
-        <% if(leng > 72 && leng <= 108 && i == leng-1) { %>
+          <% } %>
+      </section>
+      <section id="sp3" onload="fadeIn(this)">
+        <% for(var i=72; i<resultArr.length && i<108; i++) {%>
+          <% var imgSrc = resultArr[i]["image"]; %>
+          <% var chpName = resultArr[i]["name"]; %>
+          <% var href1 = "/champ/" + resultArr[i]["short"]; %>
+          <section class="champ">
+            <a href="<%= href1%>"><img src="<%= imgSrc %>" alt="champAvatar"></a>
+            <a id="clickA" href="<%= href1 %>"><%= chpName %></a>
           </section>
-        <% } %>
-        <% if(leng > 108 && i == leng-1) { %>
+          <% } %>
+      </section>
+      <section id="sp4" onload="fadeIn(this)">
+        <% for(var i=108; i<resultArr.length; i++) {%>
+          <% var imgSrc = resultArr[i]["image"]; %>
+          <% var chpName = resultArr[i]["name"]; %>
+          <% var href1 = "/champ/" + resultArr[i]["short"]; %>
+          <section class="champ">
+            <a href="<%= href1%>"><img src="<%= imgSrc %>" alt="champAvatar"></a>
+            <a id="clickA" href="<%= href1 %>"><%= chpName %></a>
           </section>
-        <% } %>
-      <% } %>
+          <% } %>
+      </section>
     </section>
     <section id="box"></section>
     <p id="botwords">2017 COUNTER BUDDY All Rights Reserved&nbsp;&reg;</p>
