@@ -24,6 +24,11 @@ header h1 a{
   width: 90%;
   margin-left:3%;
 }
+
+#sp2, #sp3, #sp4{
+  display: none;
+}
+
 #nofound{
   color:rgba(211,175,55,1);
   font-family:
