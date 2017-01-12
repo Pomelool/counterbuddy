@@ -7,7 +7,7 @@
     <link rel="icon" href="./image/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/search.css">
     <link rel="stylesheet" href="../css/font.css">
-    <link rel="prefetch" href="./image/champbg.jpg">
+    <link rel="prefetch" href="../image/champbg.jpg">
   </head>
   <body>
     <header>
@@ -18,7 +18,6 @@
       </form>
       <hr id="frontline">
     </header>
-
     <section id="main">
       <% resultArr.sort(function(a,b){ %>
         <% return a["name"].localeCompare(b["name"]); %>
@@ -56,7 +55,7 @@
           <% var chpName = resultArr[i]["name"]; %>
           <% var href1 = "/champ/" + resultArr[i]["short"]; %>
           <section class="champ">
-            <a href="<%= href1%>"><img src="<%= imgSrc %>" alt="champAvatar"></a>
+            <a href="<%= href1%>"><img src="<%= imgSrc %>"  alt="champAvatar"></a>
             <a id="clickA" href="<%= href1 %>"><%= chpName %></a>
           </section>
           <% } %>
@@ -75,11 +74,6 @@
     </section>
     <section id="box"></section>
     <p id="botwords">2017 COUNTER BUDDY All Rights Reserved&nbsp;&reg;</p>
-    <script type="text/javascript">
-    window.fadeIn = function(obj) {
-        $(obj).fadeIn(500);
-    }
-    </script>
     <script src="../javascript/jquery-3.1.1.min.js"></script>
     <script src = "../javascript/search.js"></script>
   </body>
