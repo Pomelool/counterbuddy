@@ -10,6 +10,12 @@
     <link rel="prefetch" href="./image/champbg.jpg">
   </head>
   <body>
+    <script src="../javascript/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript">
+    var fadeIn = function(obj) {
+        $(obj).fadeIn(500);
+    }
+    </script>
     <img id="bg" onload="fadeIn(this)" style="display:none;" src="../image/bg.jpg" alt="background">
     <section id="center">
       <p id="title">Counter Buddy</p>
@@ -34,12 +40,8 @@
       <p class="bot" id="f4">This website has served <b id="specialf"><%= num %></b> times for counter pick advice!</p></p>
       <a href="#" onclick="contactMe()" class="bot" id="f3">Contact Us</a>
     </footer>
-    <script type="text/javascript">
-    var fadeIn = function(obj) {
-        $(obj).fadeIn(500);
-    }
-    </script>
-    <script src="../javascript/jquery-3.1.1.min.js"></script>
+
+
     <script src = "../javascript/index.js"></script>
   </body>
 </html>
